@@ -5,7 +5,7 @@ Q = 256
 def read_input():
     # this function needs to aquire input both from keyboard and file
     # as before, use capital i (input from keyboard) and capital f (input from file) to choose which input type will follow
-      actionChoose = input()
+    actionChoose = input()
     if  "i" in actionChoose.lower():        
     # input from keyboard
         patternInput = input()
