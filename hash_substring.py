@@ -12,16 +12,10 @@ def read_input():
         textData = input()
 
     elif "f" in actionChoose.lower():
-        openFilename = input()
-        if "a" in openFilename.lower():
-            return
-        else:
-            with open("./tests/" + openFilename, mode = "r") as f:
-                # input from keyboard
-                patternInput = f.readline()
-                textData = f.readline()
-    else:
-        return
+        name = "./tests/06"
+        with open(name, mode = "r") as f:
+            patternInput = f.readline()
+            textData = f.readline()
     
     # after input type choice
     # read two lines 
